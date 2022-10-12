@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto',sans-serif;
+}
+.display::after{
+    content: "";
+    background: transparent;
+    filter: blur(1px);
+    position: absolute;
+    z-index: 2;
+}
+.display{
+    padding: 2rem 1rem;
+    border: 1px white solid;
+    margin: 1rem 0rem;
+    width: 40%;
+    text-align: center;
+    background: white;
+    border-radius: 5px;
+    color: black;
+}
+.Game{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#6A11CB,#FC6767);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.xo{
+    max-width: 1280px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 0.75rem;
+    margin: auto;
+}
+.square{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: white ;
+    border-radius: 10px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+span{
+    font-size: 5rem;
+    background: linear-gradient(#6A11CB,#FC6767);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.reset{
+    border: none;
+    background-color: white;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 3.5rem;
+    cursor: pointer;
+}
+.reset span{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
